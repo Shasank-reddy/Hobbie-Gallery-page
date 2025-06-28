@@ -1,0 +1,111 @@
+/* Fonts and Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(to right, #f9f3ec, #fce9f1);
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: #ffdbf0;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 2.5rem;
+  color: #cc1573;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+
+.about-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-text h2 {
+  color: #9c27b0;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.about-image {
+  flex: 1;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Gallery Section */
+.gallery h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #3f51b5;
+  margin-bottom: 25px;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  padding: 0 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    flex-direction: column;
+  }
+
+  .about-text, .about-image {
+    padding: 15px;
+  }
+}
